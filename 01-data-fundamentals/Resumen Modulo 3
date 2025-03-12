@@ -1,0 +1,61 @@
+El software de código abierto es un tipo de software cuyo código fuente es accesible públicamente, permitiendo a cualquier persona usar, ver, 
+modificar y compartirlo. 
+Se basa en una comunidad colaborativa donde los desarrolladores contribuyen ideas y mejoras. Los términos clave en este ámbito incluyen "comunidad", 
+que se refiere a todos los involucrados en un proyecto colaborador  quien aporta al proyecto committer que revisa y aprueba cambios en el código código de 
+conducta que establece pautas de comportamiento aceptable y "directrices de contribución que detallan cómo participar en el proyecto. Estos elementos son 
+fundamentales 
+para fomentar un entorno de colaboración y respeto en el desarrollo de software de código abierto
+El software de código abierto es fundamental para científicos e ingenieros de datos, ya que ofrece acceso a tecnologías clave y oportunidades para 
+aprender y desarrollar habilidades. Las comunidades de código abierto sirven como recursos de tutoría, permiten a los desarrolladores mostrar su 
+experiencia y ayudan a quienes inician su carrera en programación. Desde la perspectiva empresarial, el software de código abierto fomenta la innovación 
+al aprovechar el modelo comunitario, reduce costos al facilitar
+ el desarrollo y la corrección de errores, y permite a las empresas influir en el desarrollo tecnológico. Además, contribuye a mejorar la seguridad y 
+confiabilidad del software, ayudando a las empresas a mantenerse competitivas
+En GitHub, puedes crear y dejar tu propio proyecto de código abierto en un repositorio, que almacena archivos y datos. 
+También puedes contribuir a proyectos existentes al acceder a su repositorio, realizar actualizaciones y solicitar revisiones de tus cambios.
+Microsoft Excel aplicación de hoja de cálculo de Microsoft utilizada para el análisis de datos.
+ Permite ingresar, examinar y manipular datos en filas y columnas, así como limpiar la información antes del análisis. Excel cuenta con funciones 
+integradas para el análisis de datos, como filtrado, fórmulas y tablas de pivote, y ofrece diversas opciones de visualización, incluyendo gráficos de
+ pastel, barra, línea y diagrama de dispersión.
+ Además, proporciona plantillas y recomendaciones para crear gráficos basados en los datos, permitiendo combinar diferentes tipos de gráficos en una 
+misma hoja de cálculo.
+Google Sheets es una herramienta gratis que permite ingresar, analizar y visualizar datos para tomar decisiones basadas en información Sheets ofrece 
+características como la entrada de datos y la capacidad de insertar gráficos, como gráficos de líneas, para visualizar la información. Un ejemplo de 
+Google Sheets muestra datos de descarga de vídeo, destacando las similitudes en las funcionalidades de ambas aplicaciones de hoja de cálculo.
+SQL, o Structured Query Language, es un lenguaje estándar utilizado para comunicarse con bases de datos relacionales SQL permite realizar consultas y
+ modificar el contenido de una base de datos, facilitando operaciones como seleccionar, recuperar, actualizar y eliminar datos. Los comandos SQL más 
+comunes incluyen Select, Insert, Update, Delete, Create y Drop. Con SQL, puedes ejecutar consultas, gestionar registros, crear nuevas bases de datos y
+ tablas, establecer permisos y crear procedimientos almacenados y vistas.
+
+NoSQL, que significa no solo SQ, es un tipo de base de datos que permite trabajar con datos no estructurados en bases de datos no relacionales.
+ Es útil para big data y aplicaciones web en tiempo real, como las que maneja Twitter. Los científicos de datos utilizan NoSQL para almacenar 
+datos no estructurados, como imágenes y texto. Los tipos de bases de datos NoSQL incluyen bases de datos de documentos, de columnas amplias y de
+ gráficos, complementando el uso de SQL en la gestión de datos.
+Python es un lenguaje de programación gratuito, de código abierto y de propósito general Diseñado para ser fácil de usar, Python se destaca por 
+su sintaxis legible y su uso de espacios en blanco. Es versátil y se puede utilizar para desarrollar aplicaciones web y proyectos de ciencia de 
+datos, así como para conectarse a bases de datos y manipular archivos. Python es capaz de manejar big data y realizar cálculos complejos, y se 
+puede combinar con bibliotecas como pandas para el análisis y visualización de datos.
+IBM Watson Studio es un entorno de desarrollo integrado (IDE) que combina herramientas de desarrollo y analítica en una plataforma colaborativa 
+para ciencia de datos y aprendizaje automático. Diseñado para ser accesible,
+ no requiere conocimientos de codificación y funciona con herramientas de código abierto. Incluye una herramienta de refinería de datos que 
+permite preparar y transformar grandes volúmenes de datos en información de alta calidad. Además, ofrece capacidades de visualización mediante gráficos
+ integrados y permite programar trabajos para obtener resultados repetibles.
+ 
+
+Tableau es un popular software de visualización de datos e inteligencia empresarial que permite a las empresas extraer información 
+significativa de grandes volúmenes de datos. Con Tableau los usuarios pueden crear paneles, gráficos, mapas y más para facilitar la toma de
+ decisiones comerciales, todo sin necesidad de experiencia en programación, gracias a su interfaz intuitiva. Además, permite diseñar visualizacion
+es interactivas que mejoran la comprensión de los datos.
+ 
+
+
+Matplotlib es una de las bibliotecas más utilizadas en Python para crear gráficos bidimensionales a partir de datos en listas o matrices. es un proyecto 
+de código abierto mantenido por la comunidad. Con Matplotlib, es posible generar gráficos visuales con solo unas pocas líneas de código, creando diferentes tipos de visualizaciones, como diagramas de dispersión, histogramas y gráficos de barras. Las visualizaciones pueden ser estáticas, animadas o interactivas, y se pueden exportar a varios formatos de archivo.
+ 
+Al elegir herramientas de análisis y visualización de datos, las empresas deben considerar varios factores, como el tipo de datos a analizar, la
+ necesidad de procesos específicos como el modelado de datos, el volumen de datos si es big data el tipo de visualizaciones requeridas (interactivas o no), 
+el nivel de tecnicidad necesario para los roles que utilizarán las herramientas (científicos de datos o profesionales de marketing) y el presupuesto disponible. 
+Seleccionar las herramientas adecuadas es crucial para satisfacer las necesidades de la empresa en el momento oportuno.
+No todas las herramientas son adecuadas para todos los usuarios o proyectos, ya que cada una tiene características específicas. Se presenta una visualización 
+que ilustra la correlación entre la flexibilidad de una herramienta y la dificultad de aprendizaje para principiantes, destacando que algunas herramientas
+ pueden ser familiares mientras que otras pueden ser nuevas para el usuario
