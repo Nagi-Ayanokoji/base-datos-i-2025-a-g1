@@ -1,0 +1,38 @@
+Resumen Modulo 1
+Los datos son herramientas para resolver problemas. Los analistas de datos interpretan la información, siguiendo unos pasos que incluye la recopilación, limpieza y transformación de los datos. 
+Su objetivo es extraer información valiosa. El propósito es aprovechar estos conocimientos para facilitar decisiones más concretas y resolver problemas de manera efectiva.
+Se calcula que diariamente se producen 2,5 quintillones de bytes de datos, que equivale a 1 seguido de 18 ceros. Entre las cifras relacionadas con la creación de datos, 
+se observa que las personas realizan 3 mil millones de minutos de llamadas en Skype, comparten 5 mil millones de videos y fotos en Snapchat, envían 333.2 mil millones de correos electrónicos y gastan 1 millón de USD cada minuto en Internet.
+Los datos estructurados son información que se organiza en filas y columnas, como en hojas de cálculo de Microsoft Excel. Los analistas de datos utilizan herramientas como SQL para analizar grandes volúmenes de datos almacenados en múltiples tablas interconectadas. Si se puede agrupar la información según características específicas, se considera que esos grupos son datos estructurados.
+ 
+Los datos no estructurados abarcan "todo lo demás" que no tiene un formato definido ni una organización Se presentan como un conjunto diverso de datos que se almacenan en sus formatos originales. Ejemplos de este tipo de datos incluyen imágenes, textos, publicaciones en redes sociales como tweets, comentarios de clientes,
+ registros médicos y letras de canciones.
+La mayoría de las bases de datos se estructuran como bases de datos relacionales, que consisten en múltiples conjuntos de datos o tablas interconectadas. Por ejemplo, una tabla puede contener nombres y direcciones, mientras que otra puede listar propiedades y sus propietarios. 
+Si algunos propietarios también figuran en la tabla de nombres y direcciones, estas tablas pueden vincularse, formando así una base de datos relacional.
+Cuantitativo significa que algo es numérico y puedes contarlo.  Pensar cantidad - algo que puedes contar (o medir).
+Cualitativo significa que algo no es numérico y se puede contar. Pensar calidad – algo que puedes categorizar sobre datos en su lugar.
+Los datos cuantitativos pueden ser discreto o continuo.
+Los datos cualitativos pueden ser nominal o ordinal.
+
+El big data se refiere a la gran cantidad de datos generados diariamente por personas a través de dispositivos conectados a Internet. Esto incluye mensajes de texto, registros escolares, hábitos de viaje y preferencias de películas, creando un rastro digital de cada usuario.
+Los elementos de big data se pueden explicar utilizando cinco características amplias llamadas 5 Vatios. Los 5 Vs son Volumen, Variedad, Velocidad, Veracidad, y Valor. Los 5 VV ayudan a los científicos de datos a dar sentido a lo que están trabajando y se representan en este diagrama.
+El análisis descriptivo es el tipo más básico y común de análisis de datos, que responde a la pregunta 
+"¿Qué está sucediendo?. Proporciona una visión general de las tendencias y patrones comerciales utilizando datos históricos y actuales, permitiendo a los analistas obtener información valiosa sobre el pasado y métricas clave de una empresa. 
+Aunque no explica las causas de los hallazgos, ayuda a identificar problemas y áreas para investigar. Ejemplos de datos utilizados incluyen el número de suscriptores, encuestas de satisfacción del cliente, informes de ingresos y datos demográficos de clientes.
+El curso está diseñado para ofrecer una comprensión básica de los datos y su análisis. Está estructurado en varios módulos, comenzando con los tipos de datos y su importancia, seguido por una introducción al big data y los tipos de análisis de datos, que incluyen el análisis descriptivo, 
+diagnóstico, predictivo y prescriptivo. El análisis descriptivo proporciona una visión general de las tendencias y patrones actuales, mientras que el análisis diagnóstico busca entender las causas detrás de estos patrones. Cada módulo incluye cuestionarios para evaluar el progreso del estudiante, y el curso culmina con una evaluación final para consolidar el aprendizaje.
+El análisis predictivo utiliza datos históricos para hacer pronósticos sobre el futuro, como la probabilidad de eventos, cantidades cuantificables o el tiempo en que ocurrirá algo, mediante modelos predictivos.
+El análisis prescriptivo utiliza información de análisis previos para recomendar acciones específicas que aborden problemas o aprovechen tendencias. Su objetivo es guiar decisiones estratégicas y requiere un compromiso significativo de recursos y tecnología avanzada, como aprendizaje automático y algoritmos.
+“Esto es ‘square one’ en el proceso. Este paso consiste en recopilar los datos correctos y los datos suficientes para las preguntas o problemas de los proyectos que queremos investigar.
+“Siguiente, no todos los datos que recopile serán útiles, ¡así que es hora de limpiarlos!  
+La limpieza de datos es el proceso de detectar y corregir registros faltantes o inexactos de un conjunto de datos.
+“Una vez que tengo los datos relevantes y se limpia, es hora de analizar. Este es el paso en el que los analistas de datos pasan alrededor del 20-30% de su tiempo
+ETL proporciona la base para análisis de datos y flujos de trabajo de aprendizaje automático. Las organizaciones a menudo usan ETL para:
+Extraer datos de sistemas heredados
+Limpiar los datos para mejorar la calidad de los datos y establecer la coherencia
+Cargar datos en una base de datos de destino
+¿De qué sirven los datos si no puede comunicarse al respecto de una manera que la gente entienda? Aquí es donde entran en juego las visualizaciones. Una visualización de datos es una visualización gráfica de información abstracta o compleja. Los analistas de datos utilizan visualizaciones como cuadros, gráficos y mapas por dos razones:
+
+Explorar e interpretar datos durante el análisis para identificar patrones o tendencias
+Comunicar resultados y ayudar a las personas a comprender las ideas para tomar decisiones
+El cuentacuentos de datos es el proceso de transformar análisis de datos en historias claras y comprensibles para influir en decisiones comerciales. Es una habilidad crucial en el contexto de negocios digitales, ya que ayuda a los tomadores de decisiones a interpretar y conectar los resultados con acciones efectivas.
