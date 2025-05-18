@@ -1,0 +1,168 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.6">
+  <diagram name="MER Completo" id="diagram123">
+    <mxGraphModel dx="1895" dy="2234" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="person" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;PERSON&#xa;&#xa;&#xa;id_person (PK)&#xa;&#xa;first_name&#xa;&#xa;last_name&#xa;&#xa;document_type&#xa;&#xa;document_number&#xa;&#xa;birth_date&#xa;&#xa;email&#xa;&#xa;phone" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="440" y="-220" width="230" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="user" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;USER&#xa;&#xa;&#xa;id_user (PK)&#xa;username&#xa;password&#xa;status&#xa;created_at&#xa;id_person (FK)" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="775" y="-160" width="195" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_user_person" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="user" target="person" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rol_user" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;ROL_USER&#xa;&#xa;id_rol_user (PK)&#xa;id_user (FK)&#xa;id_rol (FK)&#xa;assigned_at" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="-420" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_roluser_user" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="rol_user" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="-160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_roluser_rol" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="rol_user" target="rol" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="modulo" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;MODULO&#xa;&#xa;&#xa;id_modulo (PK)&#xa;name&#xa;description&#xa;icon&#xa;status" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="150" y="-120" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="modulo_rol" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;MODULO_ROL&#xa;&#xa;&#xa;id_modulo_rol (PK)&#xa;id_modulo (FK)&#xa;id_rol (FK)&#xa;access_level" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="150" y="-410" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_modulorol_modulo" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="modulo_rol" target="modulo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_modulorol_rol" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="modulo_rol" target="rol" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="form" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;FORM&#xa;&#xa;&#xa;id_form (PK)&#xa;name&#xa;url&#xa;description&#xa;status" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="150" y="430" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="form_modulo" value="&#xa;&#xa;&#xa;&#xa;&#xa;FORM_MODULO&#xa;&#xa;&#xa;id_form_modulo (PK)&#xa;id_form (FK)&#xa;id_modulo (FK)&#xa;order" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="150" y="140" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_formmod_form" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="form_modulo" target="form" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_formmod_modulo" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="form_modulo" target="modulo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="permission" value="&#xa;&#xa;&#xa;&#xa;PERMISSION&#xa;&#xa;id_permission (PK)&#xa;name&#xa;description" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="785" y="450" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="form_permission" value="&#xa;&#xa;&#xa;&#xa;FORM_PERMISSION&#xa;&#xa;&#xa;d_form_permission (PK)&#xa;id_form (FK)&#xa;id_permission (FK)" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="470" y="450" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_fp_form" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="form_permission" target="form" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_fp_perm" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="form_permission" target="permission" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="user_permission" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;USER_PERMISSION&#xa;&#xa;id_user_permission (PK)&#xa;id_user (FK)&#xa;id_permission (FK)&#xa;granted_at" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="775" y="160" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_up_user" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="user_permission" target="user" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_up_perm" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="user_permission" target="permission" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="audit_log" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;AUDIT_LOG&#xa;&#xa;id_audit (PK)&#xa;id_user (FK)&#xa;action&#xa;timestamp&#xa;description&#xa;table_affected" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="1210" y="-40" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_audit_user" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="audit_log" target="user" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="session" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;SESSION&#xa;&#xa;&#xa;id_session (PK)&#xa;id_user (FK)&#xa;login_time&#xa;logout_time&#xa;ip_address&#xa;device_info" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="1241" y="-230" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_session_user" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="session" target="user" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="notification" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;NOTIFICATION&#xa;&#xa;id_notification (PK)&#xa;id_user (FK)&#xa;title&#xa;message&#xa;read_status&#xa;sent_at" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="772.5" y="-680" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_notification_user" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="rol" target="user" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="theme" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;THEME&#xa;&#xa;id_theme (PK)&#xa;name&#xa;primary_color&#xa;secondary_color&#xa;is_dark_mode" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="440" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="user_theme" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;USER_THEME&#xa;&#xa;&#xa;id_user_theme (PK)&#xa;id_user (FK)&#xa;id_theme (FK)&#xa;assigned_at" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="150" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ut_user" style="endArrow=block;endFill=1;entryX=1;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="user_theme" target="user" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ut_theme" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="user_theme" target="theme" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-2" value="" style="endArrow=block;endFill=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" parent="1" source="notification" target="rol" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="146" as="sourcePoint" />
+            <mxPoint x="660" y="-46" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rol" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;ROL&#xa;&#xa;&#xa;id_rol (PK)&#xa;name&#xa;description&#xa;status" style="shape=swimlane;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="775" y="-410" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-6" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="690" y="-130" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-9" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;N:1&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="980" y="-250" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-11" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1.N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="-170" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1.N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="-50" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-13" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;N:1&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="790" y="-240" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-16" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1.N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="70" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-17" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="510" y="-390" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-18" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="810" y="-490" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-19" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="170" y="-210" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-20" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="170" y="70" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-21" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="170" y="330" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-22" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="-390" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-23" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="340" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-24" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;N:1&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="800" y="350" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-25" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;N:1&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="800" y="70" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-26" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="680" y="460" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f586cwfLeyeBnX5nGSGr-27" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="374" y="460" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="O4JGknPMdRi_rEnLHOLB-1" value="" style="shape=tape;whiteSpace=wrap;html=1;strokeColor=#457B9D;fontColor=#1D3557;fillColor=#A8DADC;" vertex="1" parent="1">
+          <mxGeometry x="370" y="50" width="120" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
