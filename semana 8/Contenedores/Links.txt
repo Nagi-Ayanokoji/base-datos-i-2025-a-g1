@@ -1,6 +1,0 @@
-repositorio base-- https://github.com/Nagi-Ayanokoji/base-datos-i-2025-a-g1.git
-
-rama repositorio-- https://github.com/Nagi-Ayanokoji/base-datos-i-2025-a-g1/tree/feature/activity
-
-link video de youtube-- https://youtu.be/Np-j_bKPMA4
-
